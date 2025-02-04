@@ -23,6 +23,7 @@ export const store = configureStore({
   reducer: {
     [baseApi.reducerPath] : baseApi.reducer, // baseApi store e connect kora lagbe
     auth: persistedReducer,
+    // auth: authReducer, first e ei ta thakbe. then pore presitedReducer ta hobe
   },
   middleware: getDefaultMiddleWares => getDefaultMiddleWares({
     serializableCheck: {
